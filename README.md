@@ -15,7 +15,6 @@ Ett skräddarsytt WordPress-tema för en receptblogg med fokus på familjevänli
 1. Klona repot:
 ```bash
 git clone https://github.com/wi-fa/wordpress-labb.git
-cd wordpress/wp-content/themes/familjekoket/vite
 ```
 
 2. Starta Docker:
@@ -23,12 +22,17 @@ cd wordpress/wp-content/themes/familjekoket/vite
 docker-compose up -d
 ```
 
-3. Installera npm-paket:
+3. Cd'a till temat
+```bash
+cd wordpress/wp-content/themes/familjekoket/vite
+```
+
+4. Installera npm-paket:
 ```bash
 npm install
 ```
 
-4. Starta utvecklingsmiljön:
+5. Starta utvecklingsmiljön:
 ```bash
 npm run watch
 ```
