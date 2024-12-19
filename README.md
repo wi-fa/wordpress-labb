@@ -131,9 +131,3 @@ familjekoket-theme/
 - `/recept/kategori/[kategorinamn]` - Receptkategori
 - `/recept/tag/[taggnamn]` - Recepttagg
 - `/recept/[receptnamn]` - Enskilt recept
-
-## 🤝 Bidra
-Känner du att något saknas eller kan förbättras? Skapa gärna en pull request eller öppna ett issue.
-
-## 📄 Licens
-[Din valda licens]
