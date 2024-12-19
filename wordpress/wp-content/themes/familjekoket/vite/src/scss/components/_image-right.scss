@@ -1,0 +1,77 @@
+.content-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .main-content {
+        margin-top: 1rem;
+        padding-right: 2rem;
+
+        @media (max-width: 1024px) {
+            padding-right: 0;
+        }
+        @media (max-width: 768px) {
+            order: 2;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .content-section {
+            h2 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                color: #444;
+                line-height: 1.8;
+                margin-bottom: 1.5rem;
+            }
+
+            ul, ol {
+                margin-bottom: 1.5rem;
+                padding-left: 1.5rem;
+
+                li {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .featured-image {
+        @media (min-width: 1025px) {
+            position: sticky;
+            top: 120px;
+            height: fit-content;
+        }
+        @media (max-width: 768px) {
+            order: 1; // Flyttar bilden högst upp
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            object-fit: cover;
+        }
+    }
+}

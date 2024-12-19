@@ -1,0 +1,43 @@
+.archive-header {
+    margin-bottom: 2rem;
+    // padding: 1rem;
+    border-radius: 8px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    margin-right: 1rem;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+}
+
+.author-details h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.author-bio {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .author-info {
+        flex-direction: column;
+        text-align: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .author-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}

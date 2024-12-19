@@ -1,0 +1,39 @@
+# WordPress-kärnfiler
+wordpress/wp-admin/
+wordpress/wp-includes/
+
+# Uppladdade filer
+wordpress/wp-content/uploads/
+
+# Plugins
+wordpress/wp-content/plugins/
+
+# Allt i wp-content
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/*
+
+# Förutom mitt tema
+!wordpress/wp-content/themes/familjekoket/
+wordpress/wp-content/themes/ditt-tema/node_modules/
+wordpress/wp-content/themes/familjekoket/dist/
+
+# Byggfiler och cache från vite
+wordpress/wp-content/themes/familjekoket/node_modules/
+wordpress/wp-content/themes/familjekoket/dist/
+wordpress/wp-content/themes/familjekoket/.vite/
+
+# Docker-volumes och db
+db_data/
+*.sql
+*.tar
+*.zip
+
+# Annat
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.tmp
+*.bak

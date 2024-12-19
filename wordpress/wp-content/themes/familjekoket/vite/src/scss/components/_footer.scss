@@ -1,0 +1,112 @@
+.footerContainer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid grey;
+
+    img{
+    border-bottom: 0.5px solid grey;
+
+    }
+
+    .footerMain {
+      display: flex;
+      justify-content: space-between;
+
+      .subscribe {
+        padding: 1rem;
+        h3 {
+          font-weight: 600;
+          font-size: 20px;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 13px;
+          color: #5d5d5d;
+          line-height: 1.2rem;
+        }
+        button {
+          margin-top: 1rem;
+          background-color: black;
+          border: none;
+          border-radius: 48px;
+          margin-bottom: 3rem;
+          padding: 10px 15px;
+          cursor: pointer;
+          width: 98px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+
+          span {
+            color: white;
+            font-size: 20px;
+            padding-left: 1.7rem;
+          }
+
+          &:hover {
+            background-color: #ffdb01;
+            span {
+              color: black;
+            }
+          }
+        }
+      }
+
+      .footerContent {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        gap: 2rem;
+
+        .listContainer {
+          span {
+            color: #999999;
+            font-size: 13px;
+          }
+          ul {
+            padding: 0;
+            margin-left: 0;
+            margin-top: 1rem;
+            list-style: none;
+            font-size: 13px;
+            li {
+              margin-bottom: 0.5rem;
+              a {
+                color: #2a2a2a;
+                text-decoration: none;
+                &:hover {
+                  color: #4d4d4d;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerFoot {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      font-size: 14px;
+      font-weight: 500;
+      border-top: 0.5px solid grey;
+    }
+   }
+
+   @media (max-width: 650px) {
+    .footerMain {
+      display: flex;
+      flex-direction: column;
+      .subscribe {
+        display: none;
+      }
+    }
+   }

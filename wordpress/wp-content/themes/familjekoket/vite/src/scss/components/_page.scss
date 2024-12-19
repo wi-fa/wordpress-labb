@@ -1,0 +1,23 @@
+.page-container {
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+
+    .full-width-content {
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .content-area {
+            line-height: 1.6;
+
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
